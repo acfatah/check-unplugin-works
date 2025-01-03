@@ -1,10 +1,17 @@
 <script setup>
 import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
+
+// Should be replaced by BookOpenIcon
+// import DocumentationIcon from './icons/IconDocumentation.vue'
+
 import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
+
+// Should be replaced by MessagesSquareIcon
+// import CommunityIcon from './icons/IconCommunity.vue'
+
+// Should be replaced by HeartIcon
+// import SupportIcon from './icons/IconSupport.vue'
 
 const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 </script>
@@ -12,7 +19,7 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 <template>
   <WelcomeItem>
     <template #icon>
-      <DocumentationIcon />
+      <BookOpenIcon />
     </template>
     <template #heading>Documentation</template>
 
@@ -65,7 +72,7 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 
   <WelcomeItem>
     <template #icon>
-      <CommunityIcon />
+      <MessagesSquareIcon width="24" height="24" />
     </template>
     <template #heading>Community</template>
 
@@ -83,7 +90,7 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 
   <WelcomeItem>
     <template #icon>
-      <SupportIcon />
+      <HeartIcon />
     </template>
     <template #heading>Support Vue</template>
 

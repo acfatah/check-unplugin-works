@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { lucideIconResolver } from './src/components/resolvers'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,6 +15,9 @@ export default defineConfig({
     vueDevTools(),
     Components({
       dirs: ['src/components'],
+      resolvers: [
+        lucideIconResolver,
+      ]
     }),
     AutoImport({
       vueTemplate: true,
