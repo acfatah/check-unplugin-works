@@ -1,29 +1,15 @@
 # check-unplugin-works
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+Checks whether unjs/unplugin works on your development environment.
 
 ## Project Setup
 
 ```sh
-npm install
+npm install && npm run dev
 ```
 
-### Compile and Hot-Reload for Development
+- [ ] You should be able to see the `HelloWorld` and `TheWelcome` components correctly.
+- [ ] You should be able to see `lucide-vue-next` icons loaded.
+- [ ] You should also be able to see the following custom message on the HelloWorld component.
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+  > If you see this message, the unplugin-auto-import is working! 
